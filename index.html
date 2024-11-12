@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvin Tas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+        <div class="navbar">
+            <div class="navbar-logo">
+                <img src="img/logo.png" alt="Logo Usaha">
+                <span class="nama-usaha">Alvin Tas</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#produk">Produk</a>
+                <a href="#review">Review</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1 class="typing-text">Selamat Datang di Alvin Tas</h1>
+        <p class="typing-text">Temukan Produk Terbaik dan Berkualitas di Toko ini.</p>
+    </section>
+
+    <!-- Produk -->
+    <section id="produk">
+        <h2>Produk Kami</h2>
+        <div class="produk-container">
+            <div class="produk-item" onclick="showPopup('TAS KECE', 'Tas Keren Motif Stay Wild And Free')">
+                <img src="img/tas1.png" alt="Produk 1">
+                <div class="produk-info">
+                    <h3>Tas Kece</h3>
+                    <p>Harga: Rp100.000</p>
+                </div>
+            </div>
+            <div class="produk-item" onclick="showPopup('TAS KECE', 'Tas Keren Motif Scooter')">
+                <img src="img/tas2.png" alt="Produk 2">
+                <div class="produk-info">
+                    <h3>Tas Motif Scooter</h3>
+                    <p>Harga: Rp150.000</p>
+                </div>
+            </div>
+            <div class="produk-item" onclick="showPopup('TAS KECE', 'Tas Keren Motif Be Your Style')">
+                <img src="img/tas3.png" alt="Produk 3">
+                <div class="produk-info">
+                    <h3>Tas Kuliah</h3>
+                    <p>Harga: Rp200.000</p>
+                </div>
+            </div>
+            <div class="produk-item" onclick="showPopup('TAS KECE', 'Tas Keren Motif Labubu')">
+                <img src="img/produk pkk.png" alt="Produk 4">
+                <div class="produk-info">
+                    <h3>Produk 4</h3>
+                    <p>Harga: Rp250.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pop-up -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2 id="popupTitle"></h2>
+            <p id="popupDescription"></p>
+        </div>
+    </div>
+
+    <!-- Review Produk -->
+<section id="review">
+    <h2>Review Pelanggan</h2>
+    <div class="review-container">
+        <div class="review-item">
+            <p>"Produk berkualitas, pengiriman cepat dan sesuai harapan!"</p>
+            <span>- Timothy</span>
+        </div>
+        <div class="review-item">
+            <p>"Barangnya bagus banget, sangat puas dengan pembeliannya."</p>
+            <span>- Gerrald</span>
+        </div>
+        <div class="review-item">
+            <p>"Harga terjangkau, kualitas premium, mantap sekali!"</p>
+            <span>- Adit</span>
+        </div>
+        <div class="review-item">
+            <p>"Pelayanan ramah, produk sampai dengan cepat dan aman."</p>
+            <span>- Rama</span>
+        </div>
+        <div class="review-item">
+            <p>"Sangat direkomendasikan, tidak kecewa belanja di sini."</p>
+            <span>- Satrya</span>
+        </div>
+    </div>
+</section>
+
+    <!-- Kontak -->
+    <section id="kontak">
+        <h2>Kontak Saya</h2>
+        <p>Email: kontak@alvintas.com</p>
+        <p>Telepon: +62 821-4660-4182</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Alvin Tas. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
